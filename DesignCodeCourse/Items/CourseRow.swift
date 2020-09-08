@@ -15,8 +15,8 @@ struct CourseRow: View {
                 .frame(width: 48.0, height: 48.0)
                 .imageScale(.large)
                 .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                .clipShape(Circle())
+                .foregroundColor(.white)
             VStack(alignment: .leading, spacing: 4.0) {
                 Text("SwiftUI")
                     .font(.subheadline)
@@ -27,6 +27,7 @@ struct CourseRow: View {
             }
             Spacer()
         }
+//        .padding(.bottom)
         
         
         

@@ -14,6 +14,9 @@
 		AC23A45025057DB10001F429 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23A44F25057DB10001F429 /* CourseRow.swift */; };
 		AC23A45225057FC90001F429 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23A45125057FC90001F429 /* CoursesView.swift */; };
 		AC23A454250581550001F429 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23A453250581550001F429 /* SideBar.swift */; };
+		AC23A4562506A7000001F429 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23A4552506A7000001F429 /* CourseItem.swift */; };
+		AC23A45A2506A8CB0001F429 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23A4592506A8CB0001F429 /* CourseList.swift */; };
+		ACE1F20A2507365100CAB5B1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1F2092507365100CAB5B1 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AC23A44F25057DB10001F429 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 		AC23A45125057FC90001F429 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		AC23A453250581550001F429 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		AC23A4552506A7000001F429 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		AC23A4592506A8CB0001F429 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		ACE1F2092507365100CAB5B1 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Course.swift; path = "../../../Downloads/SwiftUI iOS 14/Source files/DesignCodeCourse/10.MatchedCardsStaticData/Shared/Course.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				AC23A440250577230001F429 /* DesignCodeCourseApp.swift */,
-				AC23A442250577230001F429 /* ContentView.swift */,
-				AC23A44F25057DB10001F429 /* CourseRow.swift */,
+				AC23A4572506A7F00001F429 /* Navigation */,
+				AC23A4582506A8070001F429 /* Items */,
 				AC23A45125057FC90001F429 /* CoursesView.swift */,
-				AC23A453250581550001F429 /* SideBar.swift */,
+				AC23A4592506A8CB0001F429 /* CourseList.swift */,
+				ACE1F2092507365100CAB5B1 /* Course.swift */,
 				AC23A444250577250001F429 /* Assets.xcassets */,
 				AC23A449250577250001F429 /* Info.plist */,
 				AC23A446250577250001F429 /* Preview Content */,
@@ -76,6 +83,24 @@
 				AC23A447250577250001F429 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC23A4572506A7F00001F429 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AC23A453250581550001F429 /* SideBar.swift */,
+				AC23A442250577230001F429 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AC23A4582506A8070001F429 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AC23A4552506A7000001F429 /* CourseItem.swift */,
+				AC23A44F25057DB10001F429 /* CourseRow.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE1F20A2507365100CAB5B1 /* Course.swift in Sources */,
 				AC23A454250581550001F429 /* SideBar.swift in Sources */,
+				AC23A4562506A7000001F429 /* CourseItem.swift in Sources */,
 				AC23A443250577230001F429 /* ContentView.swift in Sources */,
 				AC23A45025057DB10001F429 /* CourseRow.swift in Sources */,
 				AC23A441250577230001F429 /* DesignCodeCourseApp.swift in Sources */,
 				AC23A45225057FC90001F429 /* CoursesView.swift in Sources */,
+				AC23A45A2506A8CB0001F429 /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,15 @@ struct SideBar: View {
         NavigationView {
             #if os(iOS)
             content
+                .toolbar(content: {
+                    ToolbarItem(placement: .automatic) {
+                        Button(action: {
+                            print(#function)
+                        }) {
+                            Image(systemName: "person.crop.circle")
+                        }
+                    }
+                })
             #else
             // TODO setup for iPadOS/MacOS
             #endif
